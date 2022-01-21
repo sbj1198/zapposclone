@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>ZapposClone</title>
+  </head>
+  <body>
+   <div id="mc"></div>
+  </body>
+</html>
+
+<script type="module">
+  import navbar from "./components/navbar.js";
+  let container = document.getElementById("mc");
+  container.innerHTML = navbar();
+  // let el = document.getElementById("cust");
+  // el.addEventListener("click", ()=>{
+  //   // console.log(el);
+  //   let content = el.nextElementSibling;
+  //   console.log(content);
+
+  // });
+
+  // let el  = document.getElementsByClassName("cust");
+  // let i;
+  // for(i = 0; i < el.length; i++){
+  //   el[i].addEventListener("click",()=>{
+  //     let content = this.nextElementSibling;
+  //     if(content.style.visibility === "hidden"){
+  //       content.style.visibility = "visible";
+  //     }
+  //     else{
+  //       content.style.visibility = "hidden";
+  //     }
+  //   })
+  // }
+</script>

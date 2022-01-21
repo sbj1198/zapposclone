@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 12px;
+  }
+  .navbar {
+    /* border: 1px solid red; */
+  }
+  .navul {
+    display: flex;
+  }
+  .ul_li {
+    display: flex;
+  }
+  .li_a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 34px;
+    padding: 0 35px;
+    padding-top: 8px;
+    box-shadow: 1px 0 0 #d5d9d9;
+    /* border: 1px solid rebeccapurple; */
+  }
+  .a_img {
+    width: 50px;
+  }
+  .second_navbar {
+    /* border: 1px solid red; */
+    width: 100%;
+    background: #0076bd;
+    color: #fff;
+    position: relative;
+    z-index: 25;
+    white-space: nowrap;
+  }
+  .inside_header {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding: 0 25px 0 0;
+  }
+  /* .inside_header > a{
+    font: normal 16px Open Sans, sans-serif;
+    text-decoration: none;
+  } */
+  a {
+    font: normal 16px Open Sans, sans-serif;
+    color: #fff;
+    text-decoration: none;
+  }
+  .inh1 {
+    position: relative;
+    display: flex;
+    margin-right: 24px;
+    min-height: 39px;
+    align-self: stretch;
+    align-items: center;
+    border-right: 1px solid rgba(0, 57, 83, 0.6);
+  }
+  .inh1 > a {
+    font-weight: 700;
+    padding: 0 24px;
+    cursor: pointer;
+  }
+  .inh2 {
+    display: flex;
+  }
+  li {
+    list-style: none;
+  }
+  .inh1 > a::after {
+    background-image: url(https://m.media-amazon.com/images/G/01/zappos/melody/melody-sprite.2021.09.16._TTH_.svg);
+    background-repeat: no-repeat;
+    width: 9px;
+    height: 5px;
+    background-position: -5px -35px;
+    content: "";
+    display: inline-block;
+    margin-left: 0.5em;
+    vertical-align: middle;
+    transform: rotate(0deg);
+    transition: 0.255 ease-in-out;
+  }
+  .inh1 > ul {
+    position: absolute;
+    background: #fff;
+    text-align: left;
+    border: 1px solid #ddd;
+    left: 0;
+    top: 100%;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    display: block;
+    padding: 0;
+    min-width: 160px;
+    width: calc(100% - 1px);
+  }
+  .inh2 p {
+    font: normal 16px Open Sans, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    line-height: 20px;
+  }
+  .inh3 {
+    margin-left: auto;
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+  }
+  .search_section {
+    position: relative;
+    font-family: Open Sans, sans-serif;
+    padding: 0 24px;
+    border-bottom: 1px solid #dadada;
+    box-shadow: 0 7px 15px -11px #ddd;
+    background: #fff;
+    box-sizing: border-box;
+  }
+  .search_section .inh1 {
+    max-height: 1440px;
+    min-height: 42px;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .search_section img {
+    width: 100%;
+  }
+  img {
+    vertical-align: middle;
+  }
+  .search_section .inh1 > .logo_img {
+    margin: 24px 0;
+    order: 1;
+  }
+  /* .search_section{
+    box-sizing: inherit;
+  } */
+  .search_section .sear {
+    order: 2;
+    flex-grow: 0.5;
+    margin: auto 35px;
+  }
+  .search_section .sear .form_class {
+    display: flex;
+    position: relative;
+    max-width: 600px;
+    margin-bottom: 10px;
+  }
+  .search_section .sear .form_class input {
+    max-height: 44px;
+    padding-left: 40px;
+    color: #1f1f1f;
+    font: 400 16px Open Sans, sans-serif;
+    /* padding: 8px 12px; */
+    line-height: 1.35;
+    border: 2px solid #ddd;
+    flex-grow: 1;
+    min-width: 0;
+    margin: 0;
+    height: auto;
+    border-radius: 4px 0 0 4px;
+    transition: border 0.3s ease 0s;
+  }
+  .search_section .sear .form_class label {
+    background-image: url(https://m.media-amazon.com/images/G/01/zappos/melody/melody-sprite.2021.09.16._TTH_.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-position: -39px -4px;
+    transform: translateY(-50%);
+    content: "";
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    text-indent: 9999px;
+    white-space: nowrap;
+  }
+  .search_section .sear .form_class button {
+    max-height: 44px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    font-family: Open Sans, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background: #003953;
+    border: 2px solid #003953;
+    border-radius: 0 4px 4px 0;
+    height: 100%;
+  }
+  .search_section .cart {
+    order: 3;
+    color: #035d59;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    font-family: Open Sans, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 14px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    border: 2px solid #a7e688;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    background: #fff;
+  }
+  .search_section .cart::before {
+    background-image: url(https://m.media-amazon.com/images/G/01/zappos/melody/melody-sprite.2021.09.16._TTH_.svg);
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 17px;
+    background-position: -5px -5px;
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    transform: scale(1);
+    transition: transform 0.25s ease-in-out;
+  }
+  .search_section .cart:hover::before {
+    transform: scale(1.2);
+  }
+  .search_section .cart:hover {
+    background: #c3f4aa;
+    border-color: #c3f4aa;
+    color: #035d59;
+  }
+  .search_section .types_navbar {
+    order: 5;
+    position: relative;
+  }
+  .types_navbar > ul {
+    display: flex;
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .search_section > ul {
+    text-align: left;
+  }
